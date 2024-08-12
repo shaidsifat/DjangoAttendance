@@ -1,0 +1,15 @@
+<!-- attendance/templates/attendance/report.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Report</title>
+</head>
+<body>
+    <h1>Attendance Report</h1>
+    <ul>
+        {% for employee in employees %}
+            <li>{{ employee.name }} - {{ employee.employee_id }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
